@@ -1,0 +1,476 @@
+$blue: #5474fd;
+$darkerblue: #435abf;
+$josefin: 'Josefin Sans', sans-serif;
+$aleo: 'Aleo', serif;
+
+body {
+  margin: 5px;
+  color: #fff;
+}
+
+.content-wrapper {
+  max-width: 1080px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.frontpage {
+  min-height: 100vh;
+  background-image: url('../images/background_1.svg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+
+  &__text {
+    color: #fff;
+    font-family: $josefin;
+    text-align: center;
+  }
+  &__text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__text p {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  &__search {
+    display: flex;
+    background-color: #fff;
+    padding: 3px;
+    width: 650px;
+    padding: 3px;
+    input {
+      flex-grow: 3;
+      border-style: none;
+    }
+
+    input::placeholder {
+      text-align: center;
+      font-family: $josefin;
+      font-weight: lighter;
+      letter-spacing: 2px;
+    }
+
+    button {
+      background-color: $blue;
+      font-family: $aleo;
+      font-weight: lighter;
+      color: #fff;
+      font-style: 14px;
+      text-transform: uppercase;
+      border-style: none;
+      flex-grow: 1;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+    }
+    button:hover {
+      background-color: $darkerblue;
+    }
+    .fa-search {
+      padding: 0 5px;
+    }
+  }
+  &__scroll {
+    font-family: $josefin;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__navbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: $blue;
+    padding: 25px 0;
+  }
+  &__navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: $josefin;
+    color: #fff;
+    padding-left: 10px;
+    flex-grow: 1;
+  }
+  &__navbar-links a {
+  font-family: $aleo;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  padding: 0 10px;
+  flex-grow: 2;
+  }
+
+  &__navbar-links a:hover {
+    text-decoration: underline;
+  }
+}
+
+.chooseus {
+  height: 100vh;
+  background-image: url('../images/background_2.svg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+  }
+
+  &__header {
+    font-family: $aleo;
+    font-size: 24px;
+    height: 50px;
+  }
+  &__text p {
+    font-family: $josefin;
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: lighter;
+  }
+
+  &__text-paragraph {
+    padding: 20px 0;
+  }
+
+  &__text a {
+    background-color: $blue;
+    color: #fff;
+    font-family: $aleo;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
+    padding: 20px 10px;
+  }
+
+  &__text a:hover {
+    background-color: $darkerblue;
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  .chooseusf {
+    display: flex;
+    align-self: flex-start;
+    padding: 5px;
+  }
+  .chooseuss {
+    display: flex;
+    align-self: flex-end;
+    padding: 5px;
+  }
+}
+
+.iconblock {
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+.iconblock img {
+  height: 60%;
+}
+
+.countrycard {
+  height: 100vh;
+  font-family: $josefin;
+  font-weight: lighter;
+  font-size: 16px;
+
+  &__text {
+  max-width: 540px;
+  max-height: 370px;
+  background-color: #000; opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+ }
+
+  &__text a {
+  background-color: $blue;
+  color: #fff;
+  font-family: $aleo;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  width: 150px;
+  padding: 20px 10px;
+  }
+
+  &__text a:hover {
+    background-color: $darkerblue;
+  }
+
+  .country-name {
+  font-size: 20px;
+  }
+
+  .country-header {
+  font-size: 20px;
+  text-transform: uppercase;
+  }
+}
+
+.right {
+  background-image: url('../images/background_3.svg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start !important;
+}
+
+.left {
+  background-image: url('../images/background_4.svg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.testimonials {
+  min-height: 100vh;
+  background-image: url('../images/background_5.svg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__header {
+    font-family: $aleo;
+    font-size: 36px;
+    height: 100px;
+    display: flex;
+    align-items: flex-start;
+  }
+  &__card {
+    max-width: 1080px;
+    background-color: #333333;
+    display: flex;
+  }
+
+  &__card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+  }
+
+  &__name {
+    font-family: $josefin;
+    font-size: 20px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+  }
+  .fa-quote-left {
+    color: $blue;
+    font-size: 16px;
+  }
+
+  &__text {
+    font-family: $josefin;
+    font-size: 16px;
+    font-weight: lighter;
+  }
+}
+
+.footer {
+  min-height: 30vh;
+  background-color: #333333;
+  font-family: $josefin;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-end;
+
+  &__logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__textline {
+  font-size: 16px;
+  }
+
+  &__icons {
+    padding: 35px;
+  }
+
+  &__icons .fab {
+    padding: 8px;
+  }
+
+  &__icons .fab:hover {
+    color: $blue;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 0 5px;
+  }
+
+  .content-wrapper {
+    max-width: 768px;
+  }
+
+  .iconblock img {
+    max-width: 700px;
+  }
+
+  .footer {
+    min-height: 20vh;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content-wrapper {
+  max-width: 320px;
+  margin: 0;
+  }
+
+  .frontpage__scroll {
+    display: none;
+  }
+
+  .frontpage__search {
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .frontpage__search button {
+    max-width: 300px;
+    padding: 10px;
+  }
+
+  .chooseusf, .chooseuss {
+    max-width: 320px;
+  }
+  .chooseus {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .iconblock img {
+    max-width: 300px;
+  }
+}
+
+.chooseus {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &__header {
+    font-family: $aleo;
+    font-size: 24px;
+    height: 50px;
+  }
+  &__text p {
+    font-family: $josefin;
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: lighter;
+  }
+
+  &__text-paragraph {
+    padding: 20px 0;
+  }
+
+  &__text a {
+    background-color: $blue;
+    color: #fff;
+    font-family: $aleo;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
+    padding: 20px 10px;
+  }
+
+  &__images {
+    display: none;
+  }
+  }
+
+
+  .testimonials {
+    &__header {
+      font-family: $aleo;
+      font-size: 30px;
+      height: 100px;
+      display: flex;
+      align-items: flex-start;
+      text-align: center;
+    }
+    &__card {
+      max-width: 320px;
+      background-color: #333333;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .testimonials__card img {
+      max-width: 300px;
+    }
+
+    &__card-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0px;
+    }
+
+    &__name {
+      font-family: $josefin;
+      font-size: 20px;
+      padding-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .fa-quote-left {
+      color: $blue;
+      font-size: 16px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+  }
